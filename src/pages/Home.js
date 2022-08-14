@@ -12,7 +12,7 @@ class Home extends React.Component {
         </div>
         <div class="button-wrapper">
             <button type="button" id="button-home"><NavLink to="/">HOME</NavLink></button>
-            <button type="button" id="button-store">STORE</button>
+            <button type="button" id="button-store"><NavLink to="/">Store</NavLink></button>
             <button type="button" id="button-contact"><NavLink to="/ContactUs">CONTACT US</NavLink></button>
         </div>
     </section>
@@ -36,13 +36,15 @@ class Home extends React.Component {
             <h2 class="s2h2">Popsicle Race</h2>
             <p>Don't forget to sign up for the race! Each attendee will receive their own box of popsicles when they reach the end.</p>
         </div>
-    </section>    
-
+    </section>  
+      
+    <section class="section-2">
     <section class="s2-right-wrapper">
         <h2 class="s2h2">Get refreshed this Summer!</h2>
         <p>Mark this very special occasion of the launch of Tech Elevator Popsicles by buying a gift from our stunning array of items, shipped directly from Cleveland.</p>
-        <button type="button" id="button-store">STORE</button>
-    </section>
+        <button type="button" id="button-store"><NavLink to="/">Store</NavLink></button>
+    </section></section>
+
 </main>
         );
     }

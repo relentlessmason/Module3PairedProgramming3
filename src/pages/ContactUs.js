@@ -12,7 +12,7 @@ class ContactUs extends React.Component {
     </div>
     <div class="button-wrapper">
     <button type="button" id="button-home"><NavLink to="/">HOME</NavLink></button>
-            <button type="button" id="button-store">STORE</button>
+            <button type="button" id="button-store"><NavLink to="/">Store</NavLink></button>
             <button type="button" id="button-contact"><NavLink to="/ContactUs">CONTACT US</NavLink></button>
     </div>
 </section>
@@ -48,7 +48,7 @@ class ContactUs extends React.Component {
         <br />
         <br />
 
-        <input type="submit" id="submit-button" value="Submit" /></form>
+        <button type="submit" id="submit-button" value="Submit"><NavLink to="/ContactUs">Submit</NavLink></button></form>
         
         </section></section>
         </main>
