@@ -11,9 +11,9 @@ class Home extends React.Component {
             <h1 id="title">Tech Elevator Popsicles</h1>
         </div>
         <div class="button-wrapper">
-            <button type="button" id="button-home"><NavLink to="/index">HOME</NavLink></button>
+            <button type="button" id="button-home"><NavLink to="/">HOME</NavLink></button>
             <button type="button" id="button-store">STORE</button>
-            <button type="button" id="button-contact"><NavLink to="/contact-us">CONTACT US</NavLink></button>
+            <button type="button" id="button-contact"><NavLink to="/ContactUs">CONTACT US</NavLink></button>
         </div>
     </section>
 

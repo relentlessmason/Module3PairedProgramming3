@@ -15,8 +15,8 @@ a:link, a:visited {
 
 #main-list li:before {
   content: '🍡';
-  margin-left: -31px;
-  padding-right: 8px;
+  margin-left: -40px;
+  padding-right: 10px;
 }
 
 #logo {
@@ -55,16 +55,6 @@ button { /* used for store link in "Get refreshed" section */
 
 /* --- index layout --- */
 
-body{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-  "top top"
-  "s1 s1"
-  "s2left s2right"
-  "footer footer";
-  gap: 10px;
-}
 .top-section-wrapper{
   grid-area: top;
   display: flex;
@@ -74,10 +64,16 @@ body{
   align-items: center;
   justify-content: space-between;
 }
+.form-section-wrapper{
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: space-around;
+}
 
 .button-wrapper{
   display: flex;
-  width: 45%;
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -96,17 +92,26 @@ button :hover {
   align-items: center;
   padding: 20px;
 }
+.section-2{
+  grid-area: s1;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
 
 .s2-left-wrapper{
   grid-area: s2left;
   display: flex;
+  width: 50%;
   align-items: center;
   padding: 10px;
+  overflow: hidden;
 }
 
 .p-race-wrapper {
   height: 100%;
   display: flex;
+  float: left;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
@@ -119,11 +124,13 @@ button :hover {
 .s2-right-wrapper {
   grid-area: s2right;
   padding: 10px;
-  height: 89%;
+  height: 100%;
+  width: 48%;
   display: flex;
+  float: right;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  overflow: hidden;
 }
 
 .s2h2{
